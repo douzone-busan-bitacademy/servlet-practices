@@ -19,7 +19,7 @@
 				<td>비밀번호</td><td><input type="password" name="password"></td>
 			</tr>
 			<tr>
-				<td colspan=4><textarea name="contents" cols=60 rows=5></textarea></td>
+				<td colspan=4><textarea name="message" cols=60 rows=5></textarea></td>
 			</tr>
 			<tr>
 				<td colspan=4 align=right><input type="submit" VALUE="등록"></td>

@@ -1,2 +1,2 @@
 -- scheme
-desc geustbook;
+desc guestbook;
