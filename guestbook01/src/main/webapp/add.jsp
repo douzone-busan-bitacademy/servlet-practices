@@ -1,16 +1,16 @@
-<%@page import="com.bitacademy.guestbook.dao.GuestbookDao"%>
-<%@page import="com.bitacademy.guestbook.vo.GuestbookVo"%>
+<%@page import="com.douzone.guestbook.dao.GuestbookDao"%>
+<%@page import="com.douzone.guestbook.vo.GuestbookVo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	request.setCharacterEncoding("utf-8");
 	String name = request.getParameter("name");
 	String password = request.getParameter("password");
-	String contents = request.getParameter("contents");
+	String contents = request.getParameter("message");
 	
 	GuestbookVo vo = new GuestbookVo();
 	vo.setName(name);
 	vo.setPassword(password);
-	vo.setContents(contents);
+	vo.setMessage(contents);
 	
 	new GuestbookDao().insert(vo);
 	
